@@ -76,9 +76,6 @@ color: red;
     }
 }
 @media (max-width : 800px) {
-    .Logo{
-        margin: 0 100px ;
-    }
     .Logo .col-lg-8.col-md-12.flex.flex.justify-content-around{
         flex-direction: row  ;
         align-items: center ;
