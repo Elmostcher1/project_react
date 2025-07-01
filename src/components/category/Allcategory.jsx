@@ -3,6 +3,8 @@ import  "./Allcategory.css"
 import { spcificCategory } from '../ProductJson'
 import { apicontext } from '../../context/ApiContext'
 import { FaArrowUp } from "react-icons/fa";
+import {Link} from 'react-router-dom'
+
 function Allcategory() {
 
   const  openCart = useRef();
@@ -24,9 +26,9 @@ arrow.current.classList.toggle('repeat')
                </div>
               </div>
             <div className="cat_list  " ref={openCart}>
-            <a  href='/shop' onClick={()=> getAllData()}  className='text-center fs-5 '  >All products</a>
+            <Link  to={'/shop'}   onClick={()=> getAllData()}  className='text-center fs-5 '  >All products</Link>
            {spcificCategory.map((val , key)=>(
-             <a href='/shop' onClick={()=>getcatJSON(key)} key={key}  >{val.category}</a>
+             <Link  to={'/shop'} onClick={()=>getcatJSON(key)} key={key}  >{val.category}</Link>
            ))}
           {catApi.map((el , key) => <a  onClick={()=>getcatAPi(el.url)} key={key} >{el.name}</a>)}
             </div>

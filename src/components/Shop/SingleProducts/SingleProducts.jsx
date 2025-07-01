@@ -44,7 +44,8 @@ setPro(allData[id])
     <div className='About container mt-5'>
       <PageHeading  NameCom={'Home'}  title={`Products / SingleProducts  ` } titlePro={pro?.title}/>
     <div className="row">
-  <div className="col-lg-3 col-md-12">
+
+  <div className="col-lg-3 col-md-12 ">
   <Allcategory />
          <div className='just_img col-lg-12 col-md-12  '>
            <img src={img} alt=""  className='w-100 mt-5'/>
@@ -53,9 +54,8 @@ setPro(allData[id])
       
          </div>
        </div>
- <div className='d-flex flex-column col-lg-9 col-md-12'> 
 
-       <div className="detalisPro col-lg-9 col-md-12 d-flex gap-3 mt-4">
+       <div className="detalisPro col-lg-9 col-md-12 d-flex  gap-3 mt-4">
         <div className="col-lg-5 col-md-12 w-45">
          <div className=' productImg border col-lg-12 col-md-12' >
            <img src={pro?.img || pro?.thumbnail} alt="" className='w-100 h-100' ref={bgImg}/>
@@ -70,7 +70,7 @@ setPro(allData[id])
            
         </div>
       
-      <div className=" col-lg-4 col-md-12 w-50">
+      <div className=" detalis_ col-lg-4 col-md-12 w-50">
         <div className="detalis d-flex flex-column">
          <div className='d-flex flex-column border-bottom  pb-4 '>
            <p className='m-0 p-0 fs-3 fw-bold'>{pro?.title}</p>
@@ -93,10 +93,6 @@ setPro(allData[id])
          </div>
         </div>
         </div>
-      </div>
-
-       </div>
-      
           <div className='mt-5 col-12 border-bottom' ref={links}>
         <div className='d-flex gap-1 links'>
           <Link onClick={changeActive} to={''} className='active'>OverView</Link>
@@ -107,7 +103,11 @@ setPro(allData[id])
         <div>
     </div>
          </div>
-         </div>
+      </div>
+
+       </div>
+      
+      
  
       </div>
       </div>

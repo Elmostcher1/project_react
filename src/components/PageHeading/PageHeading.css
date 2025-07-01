@@ -1,1 +1,8 @@
-.PageHeading {}
+@media (max-width : 650px) {
+    .page_heading {
+        display: flex ;
+        flex-direction: column ;
+        gap: 20px;
+    }
+    
+}

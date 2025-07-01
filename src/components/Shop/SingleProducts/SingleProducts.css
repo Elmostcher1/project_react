@@ -60,5 +60,13 @@ color: var(--white-color);
     .SingleProduct .smallImg{
         width: calc(100%/4);
     }
-
+    .detalisPro{
+        flex-direction: column;
+    }
+    .detalis_{
+        width: 100% !important;
+    }
+  .About{
+    padding: 0 20px;
+  }
 }
